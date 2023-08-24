@@ -201,6 +201,7 @@
   align-items: center;
   justify-content: start;
   flex-flow: row wrap;
+  margin-bottom: 100px;
 }
 
 .advantages__items-item:not(:nth-child(4n)) {

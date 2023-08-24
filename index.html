@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- Начало: Данный блок удалять нельзя -->
@@ -15,18 +23,420 @@
         </a>
         <div>
             <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
             </p>
             <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+                пользователь получил оплату за верстку этого макета.
             </p>
         </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+        <section class="header-hero">
+            <div class="container">
+                <div class="header"><a class="header__logo" href="#"><img src="../img/n-express.svg" alt="logo"></a>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">Рассчитать доставку</li>
+                        <li class="header__nav-item">Дополнительные услуги</li>
+                        <li class="header__nav-item"> Контакты</li>
+                        <li class="header__nav-item">Заказать</li>
+                    </ul>
+                    <div class="header__contacts"><a class="header__contacts-link" href="#">+7 (495) 260 68 53</a><a
+                            class="header__contacts-link" href="#">info@A5-EXPRESS.ru</a></div>
+                </div>
+                <div class="hero">
+                    <h1 class="hero__title">НОЧНОЙ ЭКСПРЕСС</h1>
+                    <p class="hero__descr">Мы предлагаем доставку сборных грузов из Москвы в Санкт-Петербург на
+                        следующий день.
+                    </p>
+                    <p class="hero__accept">Принимаем грузы ежедневно <span class="hero__accept-color">до 21:00,</span>
+                    </p>
+                    <p class="hero__extradition">выдача на следующий день <span class="hero__accept-color">с
+                            09:00</span></p>
+                </div>
+                <div class="delivery">
+                    <div class="delivery__from">
+                        <div class="icon icon-place"><input class="inp-place delivery__from-input" type="text"
+                                placeholder="Откуда"></div>
+                        <div class="delivery-checkfield"><input class="inp-check delivery__from-check" type="radio"
+                                href="adress-from"><label class="inp-label delivery__from-label" for="adress-from">От
+                                адреса</label><input class="inp-check delivery__from-check" type="radio"
+                                href="term-from"><label class="delivery__from-label" for="term-from">От
+                                терминала</label></div>
+                    </div>
+                    <div class="delivery__weight">
+                        <div class="icon icon-scales"><input class="inp-clean delivery__weight-input" type="text"
+                                placeholder="Вес"></div>
+                    </div>
+                    <div class="delivery__to">
+                        <div class="icon icon-place"><input class="inp-place delivery__to-input" type="text"
+                                placeholder="Куда">
+                        </div>
+                        <div class="delivery-checkfield"><input class="inp-check delivery__to-check" type="radio"
+                                href="adress-to"><label class="inp-label delivery__to-label" for="adress-to">До
+                                адреса</label><input class="inp-check delivery__to-check" type="radio"
+                                href="term-to"><label class="inp-label delivery__to-label" for="term-to">До
+                                терминала</label></div>
+                    </div>
+                    <div class="delivery__weight">
+                        <div class="icon icon-scales"> <input class="inp-clean delivery__weight-input" type="text"
+                                placeholder="Вес"></div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="order__time">
+                        <p class="order__time-title">Срок доставки:</p>
+                        <p class="order__time-time">2 дня</p>
+                    </div>
+                    <div class="order__price">
+                        <p class="order__price-title">Стоимость доставки:</p>
+                        <p class="order__price-price">11 000 ₽*</p>
+                    </div><button class="order__button">Оформить заказ</button>
+                </div>
+                <p class="declare">*Цена рассчитывается от адреса забора груза до адреса доставки. Не является публичной
+                    офертой.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container advantages">
+                <h2 class="advantages__title">Почему именно мы</h2>
+                <p class="advantages__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum suspendisse
+                    sed vel
+                    a, egestas ut tellus est, at. Massa pretium sed lacus sed nibh sed nunc praesent. Nulla fermentum,
+                    malesuada
+                    enim.</p>
+                <ul class="advantages__items">
+                    <li class="advantages__items-item"><img src="../img/lock.svg">
+                        <p class="advantages-text">Заберем и доставим в любую точку города и области</p>
+                    </li>
+                    <li class="advantages__items-item"><img src="../img/terminals.svg">
+                        <p class="advantages-text">Собственные терминалы в Москве и Санкт -Петербурге</p>
+                    </li>
+                    <li class="advantages__items-item"><img src="../img/box.svg">
+                        <p class="advantages-text">Любые грузы</p>
+                    </li>
+                    <li class="advantages__items-item"><img src="../img/tracks.svg">
+                        <p class="advantages-text">Отдельный автомобиль</p>
+                    </li>
+                    <li class="advantages__items-item"><img src="../img/done.svg">
+                        <p class="advantages-text">Ежедневные отправки</p>
+                    </li>
+                    <li class="advantages__items-item"><img src="../img/container.svg">
+                        <p class="advantages-text">Наличие собственного парка транспортных средств</p>
+                    </li>
+                    <li class="advantages__items-item"><img src="../img/satellite.svg">
+                        <p class="advantages-text">Спутниковое отслеживание груза</p>
+                    </li>
+                    <li class="advantages__items-item"><img src="../img/hands.svg">
+                        <p class="advantages-text">Передадим адресату «из рук в руки»</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container storage">
+                <h2 class="storage__title">Выберите город, в котором требуется услуга ответственного хранения</h2>
+                <div class="storage__menu"><button class="storage__menu-item">Москва</button><button
+                        class="storage__menu-item">СПб</button><button class="storage__menu-item">Тариф на Терминальную
+                        обработку грузов и Ответственное хранение</button></div>
+                <div class="storage__form">
+                    <div class="storage__form-head head">
+                        <div class="head__descr">Такая услуга, как ответственное хранение позволит временно поместить
+                            Ваш груз
+                            на нашем складе, оплатив только занимаемую площадь. Таким образом, сократив Ваши расходы на
+                            логистические услуги. Вы получите площадь хранения любого нужного размера, с возможностью
+                            изменения.
+                            Мы возьмём на себя комплектацию, формирование заказов (внутреннюю проверку, маркировку,
+                            сортировку,
+                            переупаковку и т.п.) и осуществим адресную доставку клиентам.</div>
+                        <div class="head__docs">
+                            <div class="head__docs-descr">Тариф на Терминальную обработку грузов и Ответственное
+                                хранение</div>
+                            <div class="head__docs-doc"><a href="#">XML, 35 кб</a><img src="../img/direct-download.svg">
+                            </div>
+                            <div class="head__docs-descr">Договор на оказание услуг</div>
+                            <div class="head__docs-doc"><a href="#">XML, 35 кб</a><img src="../img/direct-download.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="storage__form-input input-block">
+                        <ul class="input-block__list">
+                            <li class="input-block__list-item storage-item"> <label
+                                    class="storage-item__title">Позиция</label><input
+                                    class="inp-clean storage-item__inp" type="text" placeholder="Пример"><input
+                                    class="inp-clean storage-item__inp" type="text" placeholder="Пример"></li>
+                            <li class="input-block__list-item storage-item"> <label
+                                    class="storage-item__title">Описание</label><input
+                                    class="inp-clean storage-item__inp" type="text" placeholder="Пример"><input
+                                    class="inp-clean storage-item__inp" type="text" placeholder="Пример"></li>
+                            <li class="input-block__list-item storage-item"> <label class="storage-item__title">Ед.
+                                    изм.</label><input class="inp-clean storage-item__inp" type="text"
+                                    placeholder="Килограмм"><input class="inp-clean storage-item__inp" type="text"
+                                    placeholder="Килограмм"></li>
+                            <li class="input-block__list-item storage-item"> <label class="storage-item__title">Цена,
+                                    Р</label><input class="inp-clean storage-item__inp" type="text"
+                                    placeholder="10000"><input class="inp-clean storage-item__inp" type="text"
+                                    placeholder="10000"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container direction">
+                <ul class="direction__menu">
+                    <li class="direction__menu-item card">
+                        <h2 class="card__title">О направлении</h2><svg width="370" height="4" viewBox="0 0 370 4"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="2" x2="370" y2="2" stroke="#B6CBD8" stroke-width="4" />
+                        </svg>
+                        <p class="card__descr">Одно из основных направлений автоперевозок нашей компании - это доставка
+                            грузов
+                            по маршруту из Москвы в Санкт-Петербург, а также из Санкт-Петербурга в Москву. Благодаря
+                            наличию
+                            собственного автотранспорта и четко выстроенной схеме движения, мы доставим Ваш груз между
+                            столицами
+                            на следующий день до нашего склада или адреса получателя. Все машины оборудованы
+                            инновационными
+                            системами навигации, что дает возможность отслеживать груз во время всей перевозки. Доставка
+                            грузов
+                            по данному маршруту осуществляется ежедневно. Мы выполняем доставку «Москва ⇄
+                            Санкт-Петербург» как в
+                            составе сборного груза, так и индивидуальным автотранспортом.</p>
+                    </li>
+                    <li class="direction__menu-item card">
+                        <h2 class="card__title">Основные требования к упаковке груза</h2><svg width="370" height="4"
+                            viewBox="0 0 370 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="2" x2="370" y2="2" stroke="#B6CBD8" stroke-width="4" />
+                        </svg>
+                        <p class="card__descr">Чтобы защитить груз от механических повреждений во время перевозки и
+                            доставить
+                            груз получателю в первоначальном виде: •Груз должен быть упакован, без доступа к содержимому
+                            •Поверхность упаковки груза должна быть чистой •Упаковка, содержащая заостренные углы и
+                            выступы, а
+                            так же, не стандартные размеры, допускается к перевозке после дополнительного согласования с
+                            сотрудником нашей компании, принявшим заявку. Вы можете доверить подбор подходящей упаковки
+                            для
+                            вашего груза нашим специалистам! Мы учтем все нюансы и обеспечим отправку вашего заказа
+                            точно в
+                            указанное время, гарантируя полную сохранность груза и оперативность!</p>
+                    </li>
+                    <li class="direction__menu-item card">
+                        <h2 class="card__title">Дополнительные услуги</h2><svg width="370" height="4"
+                            viewBox="0 0 370 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="2" x2="370" y2="2" stroke="#B6CBD8" stroke-width="4" />
+                        </svg>
+                        <p class="card__descr">Доставка от адреса и до адреса (из рук в руки) Отдельный автомобиль
+                            специально
+                            под Ваш груз Доставка по России Такелажные услуги Складские услуги. Ответственное хранение
+                            груза
+                            Упаковка, обрешетка груза Оформление документов</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container noname">
+                <h2 class="noname__title">Название заголовка</h2>
+                <form class="noname__form">
+                    <div class="noname__form-payer payer">
+                        <div class="icon icon-place with-check"><input class="inp-place payer__input" type="text"
+                                placeholder="Плательщик*"></div>
+                        <div class="payer__check-field"><input class="inp-check payer__check" type="radio"
+                                href="adress-from"><label class="inp-label payer__label" for="adress-from">От
+                                адреса</label><input class="inp-check payer__check" type="radio" href="adress-to"><label
+                                class="inp-label payer__label" for="adress-to">От терминала</label></div>
+                        <div class="payer__inp-free">
+                            <div class="icon icon-place free"><input class="inp-place payer__input" type="email"
+                                    placeholder="E-mail*"></div>
+                            <div class="icon icon-place free"><input class="inp-place payer__input" type="phone"
+                                    placeholder="Телефон*"></div>
+                            <div class="icon icon-place free"><input class="inp-place payer__input" type="text"
+                                    placeholder="Контактное лицо*"></div>
+                        </div>
+                        <div class="payer__check-field"><input class="inp-check payer__check" type="radio"
+                                href="#adress-from1"><label class="inp-label payer__label" for="adress-from1">От
+                                адреса</label><input class="inp-check payer__check" type="radio"
+                                href="#term-from1"><label class="inp-label payer__label" for="term-from1">От
+                                терминала</label><input class="inp-check payer__check" type="radio"
+                                href="#requisites"><label class="inp-label payer__label" for="requisites">Указать
+                                реквизиты (для договоров)</label></div>
+                        <div class="payer__inp-free">
+                            <div class="icon icon-place free"><input class="inp-place payer__input" type="text"
+                                    placeholder="Серия и номер паспорта*"></div>
+                            <div class="icon icon-place free"><input class="inp-place payer__input" type="text"
+                                    placeholder="Наименование груза"></div>
+                        </div>
+                        <div class="payer__check-field field-col">
+                            <ul class="field-left">
+                                <li class="left-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Россыпь</label></li>
+                                <li class="left-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Хрупкий</label></li>
+                                <li class="left-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Тяжеловес</label></li>
+                                <li class="left-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Страхование</label></li>
+                            </ul>
+                            <ul class="field-right">
+                                <li class="rt-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Негабарит</label></li>
+                                <li class="rt-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Паллет</label></li>
+                                <li class="rt-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Опасный</label></li>
+                                <li class="rt-item"><input class="inp-check payer__check" type="radio" href="#"><label
+                                        class="inp-label payer__label" for="#">Жест. упаковка</label></li>
+                            </ul>
+                        </div>
+                        <ul class="payer__field-inp">
+                            <li class="field-inp-item"><input class="inp-clean field-inp-inp" type="text"
+                                    placeholder="Мест">
+                            </li>
+                            <li class="field-inp-item"><input class="inp-clean field-inp-inp" type="text"
+                                    placeholder="Вес, кг."></li>
+                            <li class="field-inp-item"><input class="inp-clean field-inp-inp" type="text"
+                                    placeholder="Объем, м3"></li>
+                        </ul>
+                        <div class="icon icon-place free"><input class="inp-place payer__input" type="text"
+                                placeholder="Объявленная стоимость (страхование)"></div>
+                        <p class="payer__decl">* обязательные поля</p>
+                    </div>
+                    <div class="noname__form-logistic logistic">
+                        <div class="logistic__inputs">
+                            <ul class="logistic__inputs-labels">
+                                <li class="logistic__inputs-labels-item">
+                                    <div class="icon icon-place"><input class="inp-place logistic-input" type="text"
+                                            placeholder="Отправитель*"></div><input class="inp-check logistic-check"
+                                        type="radio" href="#payercount"><label class="inp-label logistic-label"
+                                        for="payercount">Выставить по плательщику</label>
+                                </li>
+                                <li class="logistic__inputs-labels-item">
+                                    <div class="icon icon-place"><input class="inp-place logistic-input" type="text"
+                                            placeholder="Получатель*"></div><input class="inp-check logistic-check"
+                                        type="radio" href="#payercount"><label class="inp-label logistic-label"
+                                        for="payercount">Выставить по
+                                        плательщику</label>
+                                </li>
+                                <li class="logistic__inputs-labels-item">
+                                    <div class="icon icon-place"><input class="inp-place logistic-input" type="text"
+                                            placeholder="Пункт отправления*"></div><input
+                                        class="inp-check logistic-check" type="radio" href="#payercount"><label
+                                        class="inp-label logistic-label" for="payercount">Выставить по
+                                        плательщику</label>
+                                </li>
+                                <li class="logistic__inputs-labels-item">
+                                    <div class="icon icon-place"><input class="inp-place logistic-input" type="text"
+                                            placeholder="Пункт назначения*"></div><input
+                                        class="inp-check logistic-check" type="radio" href="#payercount"><label
+                                        class="inp-label logistic-label" for="payercount">Выставить по
+                                        плательщику</label>
+                                </li>
+                            </ul>
+                            <ul class="logistic__inputs-free">
+                                <li class="logistic__inputs-free-item">
+                                    <div class="icon icon-place"><input class="inp-place" type="text"
+                                            placeholder="Адрес подачи автомобиля"></div>
+                                </li>
+                                <li class="logistic__inputs-free-item">
+                                    <div class="icon icon-place"><input class="inp-place" type="text"
+                                            placeholder="Адрес доставки"></div>
+                                </li>
+                                <li class="logistic__inputs-free-item">
+                                    <div class="icon icon-place"><input class="inp-place" type="text"
+                                            placeholder="Телефон*">
+                                    </div>
+                                </li>
+                                <li class="logistic__inputs-free-item">
+                                    <div class="icon icon-place"><input class="inp-place" type="text"
+                                            placeholder="Телефон*">
+                                    </div>
+                                </li>
+                                <li class="logistic__inputs-free-item">
+                                    <div class="icon icon-place"><input class="inp-place" type="text"
+                                            placeholder="Контактное лицо*"></div>
+                                </li>
+                                <li class="logistic__inputs-free-item">
+                                    <div class="icon icon-place"><input class="inp-place" type="text"
+                                            placeholder="Контактное лицо*"></div>
+                                </li>
+                            </ul>
+                            <div class="icon icon-place area"> <textarea class="logistic__textarea" cols="30" rows="13"
+                                    placeholder="Дополнительная информация"></textarea></div>
+                            <ul class="logistic__check-list">
+                                <li class="logistic__check-item"><input class="inp-check logistic-check" type="radio"
+                                        href="#"><label class="inp-label logistic-label" for="#">Авто</label></li>
+                                <li class="logistic__check-item"><input class="inp-check logistic-check" type="radio"
+                                        href="#"><label class="inp-label logistic-label" for="#">Ж/Д</label></li>
+                                <li class="logistic__check-item"><input class="inp-check logistic-check" type="radio"
+                                        href="#"><label class="inp-label logistic-label" for="#">Авиа</label></li>
+                                <li class="logistic__check-item"><input class="inp-check logistic-check" type="radio"
+                                        href="#"><label class="inp-label logistic-label" for="#">Согласовать</label>
+                                </li>
+                            </ul>
+                            <div class="icon icon-place log"><input class="inp-place log-input" type="text"
+                                    placeholder="Город оплаты"></div>
+                        </div>
+                    </div>
+                </form><button class="noname__form-button">Отправить заявку</button>
+                <div class="noname__decl"><input class="inp-check noname-check" type="radio" href="#"><label
+                        class="inp-label noname-label" for="#">Нажимая на кнопку &quot;Оправить заявку&quot;, вы даете
+                        согласие
+                        на обработку персональных данных в соответствии с Политикой конфиденциальности</label></div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container contacts-container"> <img src="../img/card.png" alt="card">
+                <div class="contacts-container__descr">
+                    <h2 class="contacts-container__title">Контакты</h2>
+                    <ul class="contacts-container__list">
+                        <li class="contacts-container__list-item">
+                            <div class="contacts-place">Москва</div>
+                            <div class="contact-contact">
+                                <p class="contact-adress">ул. Иловайская, дом 3, строение 18, Складской комплекс
+                                    «Деметра».</p>
+                                <p class="contact-phone">+7 (495) 260-68-53</p>
+                            </div>
+                        </li>
+                        <li class="contacts-container__list-item">
+                            <div class="contacts-place">Томилино Мос. область</div>
+                            <div class="contact-contact">
+                                <p class="contact-adress">мкр. Птицефабрика, Транспортно - Логистический парк
+                                    «Томилино», стр.
+                                    42.</p>
+                                <p class="contact-phone">+7 (495) 260-68-53, +7 (495) 925-55-35</p>
+                            </div>
+                        </li>
+                        <li class="contacts-container__list-item">
+                            <div class="contacts-place">Санкт-Петербург</div>
+                            <div class="contact-contact">
+                                <p class="contact-adress">ул. Софийская, 101, лит Е.</p>
+                                <p class="contact-phone">+7 (812) 565-68-53</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blue-block"></div>
+        </section>
+        <section class="footer">
+            <div class="container footer-container">
+                <div class="footer-container__menu">
+                    <p class="footer__menu-item start">© 2021 А5 ЭКСПРЕСС </p><img class="footer__menu-item"
+                        src="../img/n-express.svg" alt="logo">
+                    <div class="footer__menu-item end"><img src="../img/sphinx.png" alt="sphinx">
+                        <p class="footer-adv">Разработка и поддержка сайтов</p>
+                    </div>
+                </div>
+                <div class="footer__descr">Сайт является объектом авторского права. Без согласия правообладателя
+                    копирование запрещено.</div>
+            </div>
+        </section>
     </div>
 
 </body>
+
 </html>
